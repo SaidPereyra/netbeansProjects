@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="http://dtai.uteq.edu.mx/~perwal186/Hotel-Gaia/ci/assets/css/error.css"
+    />
+    <title>404 – Page Error</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="content">
+        <h2>404</h2>
+        <h4>Opps! Página no encontrada</h4>
+        <p>
+          La página que buscaba no existe. Es posible que haya escrito mal la
+          dirección o que la página se haya movido.
+        </p>
+        <a href="index.html">Regresar</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var container = document.getElementById('container');
+      window.onmousemove = function (e) {
+        var x = -e.clientX / 5,
+          y = -e.clientY / 5;
+        container.style.backgroundPositionX = x + 'px';
+        container.style.backgroundPositionY = y + 'px';
+      };
+    </script>
+  </body>
+</html>
